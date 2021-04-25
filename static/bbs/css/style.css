@@ -1,0 +1,28 @@
+.topic_edit_chk {
+    display:none;
+}
+.topic_edit_form{
+    display:none;
+}
+
+
+.topic_edit_label{
+    padding:0.25rem;
+    border:solid 0.2rem orange;
+    border-radius:0.25rem;
+    cursor:pointer;
+}
+.topic_edit_label i{
+    font-size:1.25rem;
+    
+}
+
+input[type="checkbox"].topic_edit_chk:checked ~ .topic_edit_label{
+    background:orange;
+}
+input[type="checkbox"].topic_edit_chk:checked ~ .topic_edit_form{
+    display:block;
+}
+input[type="checkbox"].topic_edit_chk:checked ~ .topic_content{
+    display:none;
+}
